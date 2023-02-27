@@ -16,6 +16,10 @@ public class Test {
         Stream<Integer> stream = testList.stream();
         Comparator<Integer> comparator = Comparator.naturalOrder();
         BiConsumer<Integer, Integer> biConsumer = (min, max) -> System.out.println(min + ", " + max);
+        System.out.println("Task 1");
         Task1.findMinMax(stream, comparator, biConsumer);
+        System.out.println("********************************");
+        System.out.println("Task 2");
+        Task2.findEvenNumbers(testList);
     }
 }
